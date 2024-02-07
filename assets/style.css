@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+:root {
+    --link-active: #4737FF;
+    --link-unactive: #9A9EA6;
+    --heading: #181E4B;
+    --desc: #5E6282;
+    --primary: #4475F2;
+    --linear: #4737FF;
+    --placeholder: #9C9C9C;
+    --border: #DEDEDE;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.bg_details_blue{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+}
+
+/* HEADER--CONTAINER */
+
+header{
+    margin-top: 70px;
+}
+
+.header_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-bar-links{
+    list-style-type: none;
+    display: flex;
+    gap: 40px;
+}
+
+.nav-bar-link {
+    text-decoration: none;
+    color: var(--link-unactive);
+    font-size: 0.875rem;
+}
+
+.nav-bar-link:hover{
+    color: var(--link-active);
+}
+
+.btn-login-header{
+    background-color: white;
+    text-decoration: none;
+    color: var(--heading);
+    font-weight: 700;
+    padding: 9px 47px;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.menu_bar{
+    width: 30px;
+    position: absolute;
+    right: 80px;
+    display: none;
+}
+
+/* MAIN--CONTAINER */
+
+.intro_main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 54px;
+}
+
+.left_content{
+   flex: 1;
+}
+
+.right_content{
+    flex: 1;
+}
+
+.right_content img{
+    max-width: 100%;
+    width: 650px;
+}
+
+
+.text_intro_main h1{
+    font-size: 4.75rem;
+    font-weight: 800;
+    color: var(--heading);
+    margin-bottom: 30px;
+}
+
+.heading_main_highlight{
+    color: var(--primary);
+}
+
+.text_intro_main p{
+    color: var(--desc);
+    font-size: 1rem;
+    width: 500px;
+    margin-bottom: 50px;
+    line-height: 30px;
+}
+
+.btn_cta_intro_main{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #FFF;
+    background-color: var(--primary);
+    padding: 18px 50px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px #4475F2;
+}
+
+
+/* FEATURES */
+
+.features{
+    margin-top: 170px;
+}
+
+.stantard_heading_text p{
+    text-transform: uppercase;
+    color: var(--primary);
+    font-size: 1.125rem;
+    font-weight: 800;
+}
+
+.stantard_heading_text h2{
+    color: #000;
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 92px;
+}
+
+.items_features{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.card{
+    text-align: center;
+    width: 281px;
+}
+
+.card h5{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #000;
+    margin-top: 20px;
+    margin-bottom: 28px;
+}
+
+.card p{
+    color: var(--desc);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* SERVICES */
+
+.services{
+    margin-top: 200px;
+}
+
+.services_items{
+    display: flex;
+    flex-direction: column;
+    gap: 140px;
+}
+
+.services_item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 145px;
+}
+
+.quick_book_rental{
+    flex-direction: row-reverse;
+}
+
+
+.desc_services_item h5{
+    font-weight: 500;
+    color: #000;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.desc_services_item p{
+    width: 411px;
+    color: var(--desc);
+}
+
+.first-paragraph{
+    margin-bottom: 15px;
+}
+
+.highlight_heading_services{
+    color: var(--primary);
+}
+
+.image_services_item img{
+    max-width: 100%;
+    width: 700px;
+}
+
+/* REVIEWS */
+
+.reviews{
+    margin-top: 255px;
+}
+
+.row_cards_reviews{
+    margin-top: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.row_cards_reviews .card{
+    border: 1px solid var(--border);
+    box-shadow: 0 100px 80px #0000001f;
+    padding: 46px 58px;
+    width: 366px;
+}
+
+.card img{
+    margin-bottom: 30px;
+}
+
+.card .intro_person{
+    margin-bottom: 25px;
+    color: var(--desc);
+}
+
+.card .person_name{
+    margin-bottom: 15px;
+    color: var(--primary);
+}
+
+.card .person_profession{
+    color: var(--heading);
+}
+
+/* LOCATION */
+
+.location{
+    margin-top: 200px;
+}
+
+.location-map{
+    width: 100%;
+}
+
+/* Footer */
+
+
+.footer_items{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 200px;
+}
+
+.footer_item{
+    text-align: center;
+}
+
+.footer_item h6{
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+}
+
+.footer_rights_reserved{
+    margin-top: 94px;
+    background-color: var(--primary);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+
+@media (max-width: 1280px){
+    .right_content{
+        display: none;
+    }
+
+    .intro_main{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .text_intro_main p{
+        width: 100%;
+    }
+
+    .bg_details_blue{
+        display: none;
+    }
+
+    .btn-login-header{
+        background-color: var(--primary);
+        color: white;
+    }
+}
+
+@media (max-width: 1180px) {
+    .services_item{
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+
+    .desc_services_item{
+        text-align: center;
+    }
+
+    .desc_services_item p{
+        width: 100%;
+    }
+}
+
+@media (max-width: 1180px){
+    .row_cards_reviews{
+        flex-direction: column;
+    }
+
+    .row_cards_reviews .card{
+        box-shadow: 10px 10px 20px #0000001f;
+    }
+
+
+}
+
+@media (max-width: 1180px){
+    
+}
+
+@media (max-width: 1180px){
+    .text_intro_main h1{
+        font-size: 3.5rem;
+    }
+
+    .stantard_heading_text h2{
+        font-size: 2rem;
+    }
+
+    .desc_services_item h5{
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 764px) { 
+    .nav_bar_container,
+    .login_container{
+        display: none;
+
+    }
+    .menu_bar{
+        display: block;
+    }
+
+    .text_intro_main h1{
+        font-size: 3rem;
+    }
+
+    .items_features{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 581px){
+    .footer_items{
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .row_cards_reviews .card{
+        width: 300px;
+    }
+}
